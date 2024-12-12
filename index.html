@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Desculpas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000, #4B0082, #1E90FF);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            max-width: 90%;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .tulip {
+            animation: bloom 2s ease-in-out forwards;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @keyframes bloom {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background-color: #4B0082;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.2em;
+                max-width: 600px;
+            }
+
+            .btn {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Pedido de Desculpas</h1>
+        <p>
+            À "nerd que tentou me matar com uma competição muito boba que não valia de nada e que julga os outros e ainda é melhor amigo do Lucas do curso da Anhanguera e não sabe falar inglês porque é nerd":
+        </p>
+        <p>
+            Peço desculpas por qualquer mal-entendido ou desconforto causado. Espero que possamos superar isso e encontrar formas de manter o respeito e a amizade.
+        </p>
+        <img src="3457769bbb393193229de80c35ac5944.jpg" alt="Buquê de Tulipas" class="tulip">
+        <br>
+        <button class="btn" onclick="alert('Desculpas aceitas?')">Aceitar Desculpas</button>
+    </div>
+    <footer>Feito com respeito e reconhecimento - 2024</footer>
+</body>
+</html>
